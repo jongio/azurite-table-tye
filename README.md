@@ -64,3 +64,19 @@ Get it running:
 1. Open Storage Explorer
 1. Connect to Azurite via the 'Attach to a local emulator' option.
 1. Navigate to the people table and view the entities being inserted by the project.
+
+
+## Azurite Table Preview Notes
+
+GitHub Release: https://github.com/Azure/Azurite/releases/tag/v3.9.0-table-alpha.1
+
+GitHub Table Branch: https://github.com/Azure/Azurite/tree/table
+
+Npm:  https://www.npmjs.com/package/azurite/v/3.9.0-table-alpha.1
+- `npm install -g azurite@alpha` // alpha tag always points to latest alpha version
+- `npm install -g azurite@3.9.0-table-alpha.1`
+
+MCR:
+- `docker run -p 10000:10000 -p 10001:10001 -p 10002:10002 mcr.microsoft.com/azure-storage/azurite:alpha` // alpha tag always points to latest alpha version
+- `docker run -p 10000:10000 -p 10001:10001 -p 10002:10002 mcr.microsoft.com/azure-storage/azurite:3.9.0-table-alpha.1`
+
