@@ -1,0 +1,19 @@
+name: azurite-table-tye
+services:
+- name: azurite-table-tye
+  project: azurite-table-tye.csproj
+- name: azurite
+  image: mcr.microsoft.com/azure-storage/azurite:alpha
+  bindings:
+    - name: blob
+      port: 10000
+      containerPort: 10000
+      protocol: http
+    - name: queue
+      port: 10001
+      containerPort: 10001
+      protocol: http
+    - name: table
+      port: 10002
+      containerPort: 10002
+      protocol: http
